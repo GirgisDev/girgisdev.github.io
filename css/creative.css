@@ -532,6 +532,11 @@ body {
   opacity: .75;
   animation: pulse 2.5s linear infinite;
 }
+@media (max-width: 700px) {
+  .loader .h1 {
+    font-size: 4vh;
+  }
+}
 .loader #cooking {
   position: relative;
   margin: 0 auto;
@@ -539,6 +544,17 @@ body {
   width: 75vh;
   height: 75vh;
   overflow: hidden;
+  left: -65px;
+}
+@media (max-width: 700px) {
+  .loader #cooking {
+    width: 65vh;
+  }
+}
+@media (max-width: 400px) {
+  .loader #cooking {
+    width: 45vh;
+  }
 }
 .loader #cooking .bubble {
   position: absolute;

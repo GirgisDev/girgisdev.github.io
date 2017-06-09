@@ -506,6 +506,10 @@ body {
   color: @color;
   opacity: .75;
   animation: pulse 2.5s linear infinite;
+
+  @media (max-width: 700px) {
+     font-size:  4vh;
+  }
 }
 
 #cooking {
@@ -515,6 +519,16 @@ body {
   width: 75vh;
   height: 75vh;
   overflow: hidden;
+  left: -65px;
+
+  @media (max-width: 700px) {
+      width: 65vh;
+      
+  }
+
+  @media (max-width: 400px) {
+      width: 45vh;
+  }
   .bubble {
     position: absolute;
     border-radius: 100%;
