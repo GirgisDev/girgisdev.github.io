@@ -167,7 +167,7 @@ header {
     min-height: auto;
     .background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: url('../img/girgis-abelmalak-header.jpg');
     text-align: center;
     color: white;
     .header-content {
@@ -223,6 +223,9 @@ header {
                 margin-right: auto;
                 h1 {
                     font-size: 50px;
+                    span {
+                        font-size: 40px;
+                    }
                 }
                 p {
                     font-size: 18px;
@@ -243,15 +246,16 @@ header {
 }
 
 .skill-circle {
+    display: inline-block;
     width: 150px;
     height: 150px;
     line-height: 150px;
     border-radius: 50%;
     border: 2px solid @theme-primary;
-    margin-bottom: 30px;
-    @media (min-width: 992px) {
-        margin: 20px auto 0;
-    }
+    margin: 20px;
+    // @media (min-width: 992px) {
+    //     margin: 20px auto 0;
+    // }
     p {
         margin-bottom: 0;
     }
@@ -309,7 +313,7 @@ header {
 
 .portfolio-box {
     position: relative;
-    display: block;
+    display: inline-block;
     max-width: 650px;
     margin: 0 auto;
     .portfolio-box-caption {
@@ -365,6 +369,14 @@ header {
         }
     }
 }
+@media (min-width: 768px) {
+    .portfolio-box {
+        display: inline-block;
+        max-width: 49.5%;
+        margin: 0 auto;
+    }
+}
+
 
 // start of get in touch section
 .social {
