@@ -6,7 +6,7 @@ Header set Cache-Control "max-age=31536000, public"
 </FilesMatch>
 
 # 1 WEEK
-<FilesMatch "\.(jpg|jpeg|png|gif|swf)$">
+<FilesMatch "img\.(jpg|jpeg|png|gif|swf)$">
 Header set Cache-Control "max-age=604800, public"
 </FilesMatch>
 
