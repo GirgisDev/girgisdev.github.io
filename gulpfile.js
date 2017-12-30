@@ -47,9 +47,6 @@ gulp.task('copy', function() {
     gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
         .pipe(gulp.dest('vendor/jquery'))
 
-    gulp.src(['node_modules/magnific-popup/dist/*'])
-        .pipe(gulp.dest('vendor/magnific-popup'))
-
     gulp.src(['node_modules/scrollreveal/dist/*.js'])
         .pipe(gulp.dest('vendor/scrollreveal'))
 
