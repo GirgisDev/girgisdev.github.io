@@ -1,6 +1,21 @@
 ##### CACHING STUFF #####
 
+# 1 YEAR
+<FilesMatch "\.(flv|ico|pdf|avi|mov|ppt|doc|mp3|wmv|wav)$">
+Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
+
 # 1 WEEK
 <FilesMatch "\.(jpg|jpeg|png|gif|swf)$">
 Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+
+# 3 HOUR
+<FilesMatch "\.(txt|xml|js|css)$">
+Header set Cache-Control "max-age=10800"
+</FilesMatch>
+
+# NEVER CACHE - notice the extra directives
+<FilesMatch "\.(html|htm|php|cgi|pl)$">
+Header set Cache-Control "max-age=0, private, no-store, no-cache, must-revalidate"
 </FilesMatch>
