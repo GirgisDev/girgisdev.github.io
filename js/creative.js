@@ -77,9 +77,9 @@
     $(window).load(function () {
         
         // fading out h1 elemnt first
-        $(".loader .h1").fadeOut(1000, function () {
+        $(".loader .loader__text").fadeOut(1000, function () {
             // fading out the loading screen
-            $(this).parent().fadeOut(1000, function () {
+            $(this).parent().parent().fadeOut(1000, function () {
                 // resetting the body overflow back to auto
                 $("body").css("overflow", "auto");
 
