@@ -55,15 +55,6 @@
 		$(".youtube span").text("Youtube");
 	});
 	
-	// setting facebook hover and mouseleave
-	$(".facebook").hover(function () {
-		$(".facebook .fa").fadeIn(400);
-		$(".facebook span").text("");
-	}).mouseleave(function () {
-		$(".facebook .fa").fadeOut(0);
-		$(".facebook span").text("Facebook");
-	});
-	
 	// setting linkedin hover and mouseleave
 	$(".linkedin").hover(function () {
 		$(".linkedin .fa").fadeIn(400);
