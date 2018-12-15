@@ -279,8 +279,13 @@ header .header-content .header-content-inner p {
 .portfolio-box {
   position: relative;
   display: inline-block;
-  max-width: 650px;
-  margin: 0 auto;
+  min-width: 400px;
+  max-width: 32%;
+  margin: 5px;
+}
+.portfolio-box:nth-child(3n + 4),
+.portfolio-box--first {
+  margin-left: 10px;
 }
 .portfolio-box .portfolio-box-caption {
   color: white;
@@ -328,13 +333,6 @@ header .header-content .header-content-inner p {
   }
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-size: 22px;
-  }
-}
-@media (min-width: 768px) {
-  .portfolio-box {
-    display: inline-block;
-    max-width: 49.5%;
-    margin: 0 auto;
   }
 }
 .social {
